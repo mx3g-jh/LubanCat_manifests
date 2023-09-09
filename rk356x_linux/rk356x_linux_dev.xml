@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="ssh://git@gitlab.ebf.local/rockchip/linux/" name="origin"/>
-  <!-- <remote fetch="https://github.com/LubanCat" name="origin"/> -->
+  <remote fetch="https://github.com/LubanCat" name="origin"/>
   <remote fetch="https://github.com/Caesar-github/" name="rk-github"/>
   <remote fetch="https://github.com/mx3g-jh/" name="mx3g-github"/>
 
