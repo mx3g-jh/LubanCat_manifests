@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- <remote fetch="ssh://git@gitlab.ebf.local/rockchip/linux/" name="origin"/> -->
-  <remote fetch="https://github.com/LubanCat" name="origin"/>
+  <remote fetch="ssh://git@gitlab.ebf.local/rockchip/linux/" name="origin"/>
+  <!-- <remote fetch="https://github.com/LubanCat" name="origin"/> -->
   <remote fetch="https://github.com/Caesar-github/" name="rk-github"/>
-  
+  <remote fetch="https://github.com/mx3g-jh/" name="mx3g-github"/>
+
   <default remote="origin" sync-j="4"/>
   
   <project dest-branch="develop" name="QLauncher" path="app/QLauncher" remote="rk-github" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/>
@@ -15,7 +16,7 @@
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
   <project dest-branch="debian10" name="debian" revision="6098a8f117738f88d149230a217527122a186b97" upstream="debian10"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="8bda0a1ce4eba7aac15c1ac89e94ccf64fc75e94" upstream="master">
+  <project dest-branch="mx3g_add_mv_image" name="LubanCat_device_rockchip" path="device/rockchip" remote="mx3g-github" revision="6ed1bfe78fb72a53fca0bd1d9325c126b939a32c" upstream="mx3g_add_mv_image">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
