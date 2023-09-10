@@ -8,7 +8,7 @@
   <default remote="origin" sync-j="14"/>
   
   <project name="LubanCat_debian11" path="debian" revision="a0c6081661b45dd55441d435ef6129ad2f502b90" upstream="debian11" dest-branch="debian11"/>
-  <project name="LubanCat_device_rockchip" path="device/rockchip" revision="abf7f33f55063245103df9738ebb5796d789ae76" upstream="mx3g_add_mv_image" dest-branch="mx3g_add_mv_image">
+  <project name="LubanCat_device_rockchip" path="device/rockchip" revision="42a76b2258034c6cc329b78ee3d808e203abc86a" upstream="mx3g_add_mv_image" dest-branch="mx3g_add_mv_image">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>

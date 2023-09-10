@@ -7,11 +7,11 @@
     <linkfile src="build/Makefile" dest="Makefile"/>
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
-  <project remote="luban-cat" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="a4e43c541357dcfd65950b600132d514687e7cd3" upstream="rk3588" dest-branch="rk3588"/>
+  <!-- <project remote="rk-github" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="a4e43c541357dcfd65950b600132d514687e7cd3" upstream="rk356x" dest-branch="rk356x"/> -->
   <project name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master" dest-branch="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="4cd4edf2fce63533982b9a0e2b0ef6be3598693d" upstream="master"/>
   <project remote="luban-cat" name="libmali" path="external/libmali" revision="8f46cc7b9777975f40323b0971f3483fa2aefcd3" upstream="master" dest-branch="master"/>
-  <project remote="luban-cat" name="linux-rga" path="external/linux-rga" revision="53d2b8e110dfb7a568718e4ba8ec4ceb64da8fac" upstream="multi_rga_im2d_api" dest-branch="multi_rga_im2d_api"/>
+  <!-- <project remote="rk-github" name="linux-rga" path="external/linux-rga" revision="53d2b8e110dfb7a568718e4ba8ec4ceb64da8fac" upstream="im2d" dest-branch="im -->
   <project name="mpp" path="external/mpp" remote="rk-github" revision="19e7edf048184ef247d643988f4a16d4cda34de6" upstream="develop" dest-branch="develop"/>
   <project name="multivideoplayer" path="app/multivideoplayer" remote="rk-github" revision="04ad2098ec542d6f0da932d4ee6676ce5a68ca82" upstream="master" dest-branch="master"/>
   <project name="qcamera" path="app/qcamera" remote="rk-github" revision="3bf2887b30e9b99be5d1fd036a2f88b464ea2781" upstream="master" dest-branch="master"/>
