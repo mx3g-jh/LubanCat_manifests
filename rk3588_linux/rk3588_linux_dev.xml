@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/> -->
-  <remote name="origin" fetch="https://github.com/LubanCat"/>  
+  <remote name="luban-cat" fetch="https://github.com/LubanCat"/>
   <remote name="rk-github" fetch="https://github.com/Caesar-github/"/>
-  
-  <!-- <include name="include/rk3588_buildroot.xml" /> -->
+  <remote name="origin" fetch="https://github.com/mx3g-jh/"/>
+  <include name="include/rk3588_buildroot.xml" />
   <!-- 如果需要构建Buildroot或recovery分区，打开rk3588_buildroot.xml -->
-  <default remote="origin" sync-j="4"/>
+  <default remote="origin" sync-j="14"/>
   
-  <project name="debian11" path="debian" revision="a0c6081661b45dd55441d435ef6129ad2f502b90" upstream="debian11" dest-branch="debian11"/>
-  <project name="device_rockchip" path="device/rockchip" revision="6de248d391731fd3849bd83d6929d9010b6159de" upstream="master" dest-branch="master">
+  <project name="LubanCat_debian11" path="debian" revision="a0c6081661b45dd55441d435ef6129ad2f502b90" upstream="debian11" dest-branch="debian11"/>
+  <project name="LubanCat_device_rockchip" path="device/rockchip" revision="abf7f33f55063245103df9738ebb5796d789ae76" upstream="mx3g_add_mv_image" dest-branch="mx3g_add_mv_image">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
+    <linkfile src="common/mv_image.sh" dest="mv_image.sh"/>
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
-  <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="60314c0dca3983a2cf264c0af05171e6b5e4aa3a" upstream="develop-5.10" dest-branch="develop-5.10"/>
-  <project name="lubancat-bin" revision="da4446576b196334590e59a9ec4cb2a094980bdf" upstream="rk3588" dest-branch="rk3588"/>
-  <project name="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
-  <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
+  <project name="LubanCat_gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
+  <project name="LubanCat_kernel" path="kernel" revision="6734fbbbfd3023177f5eb31da7341de55df13fb9" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="LubanCat_bin" path="lubancat-bin" revision="da4446576b196334590e59a9ec4cb2a094980bdf" upstream="rk3588" dest-branch="rk3588"/>
+  <project name="LubanCat_rkbin" path="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
+  <project name="LubanCat_tools" path="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk3588-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
     <linkfile src="windows/RKDevTool/rockdev/rk3588-mkupdate.bat" dest="tools/windows/RKDevTool/rockdev/mkupdate.bat"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
-  <project name="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
-  <!-- <project name="ubuntu" revision="907501789aaa72c408316e86a8ff7cad0726fbba" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/> -->
+  <project name="LubanCat_u-boot" path="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
+  <project name="LubanCat_ubuntu" path="ubuntu" revision="852941a5c7942efd7d5f3f2bad41c319917c3605" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
