@@ -22,8 +22,8 @@
   <project name="LubanCat_gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
   <project name="LubanCat_kernel" path="kernel" revision="1dcab8cfa74a24751305ddc5a5fa1d10e616749d" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="LubanCat_bin" path="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
-  <project name="LubanCat_rkbin" path="rkbin" revision="70a4b3fc75053d10a2718a75591a2fe998a207de" upstream="master" dest-branch="master"/>
-  <project name="LubanCat_tools" revision="f3cf9b371e85f357865ab164a3eba99e8125d70b" upstream="master" dest-branch="master">
+  <project name="LubanCat_rkbin" path="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
+  <project name="LubanCat_tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat" dest="tools/windows/RKDevTool/rockdev/mkupdate.bat"/>
